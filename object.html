@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript object</h2>
+    <h3>favourite animal </h3>
+    <button onclick="showanimal()">show animals</button>
+    <div id="result"></div>
+    <script>
+        let animal = {
+            name: "cat",
+            color: "white",
+            age: 2,
+            sound: "meow",
+        }
+        function showanimal() {
+            document.getElementById("result").innerHTML = "My favourite animal is a " + animal.name + ". It is " + animal.color + " in color and is " + animal.age + " years old."
+        }
+    </script>
+</body>
+</html>
