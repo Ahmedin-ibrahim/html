@@ -1,0 +1,17 @@
+<DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body> 
+        <h2>Welcome to javasript</h2>
+        <p id="demo"></p>
+        <script>
+            let cars = [ "BMW", "Audi", "Lamborghini", "Ferrari", "Porche", "Mercedes", "Rolls Royce", "Bentley", "Maserati", "Bugatti" ]
+            let firstcar = cars[0]
+            let lastcar = cars[cars.length - 1]
+            document.getElementById("demo").innerHTML = "My favourute car is " + firstcar + " and the most expensive car is " + lastcar + "<br>" + "The total number of cars that i love is " + cars.length
+        </script>
+    </body>
