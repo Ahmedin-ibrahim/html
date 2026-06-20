@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My zoo</h1>
+    <p>Use Javascript and DOM to add more to the cage</p>
+    <div id="zoo">
+        <div class="zone">Zone1: <span id="zone1"></span></div>
+        <div class="zone">Zone2: <span id="zone2"></span></div>
+        <div class="zone">Zone3: <span id="zone3"></span></div>
+        <div class="zone">Zone4: <span id="zone4"></span></div>
+    </div>
+    <br>
+    <button onclick="addAnimal()">Add Animal</button>
+    <p id="zoostatus" class="zoostatus"></p>
+    <script>
+        function addAnimal() {
+            document.getElementById("zone1").textContent = "Lion";
+            document.getElementById("zone2").textContent = "Elephant";
+            document.getElementById("zone3").textContent = "Giraffe";
+            document.getElementById("zone4").textContent = "Zebra";
+            document.getElementById("zoostatus").textContent = "Animals added!";
+        }
+    </script>
+</body>
+</html>
