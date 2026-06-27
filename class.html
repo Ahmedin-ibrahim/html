@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Planet Classes</h1> 
+    <p>Click on the button to learn about the planet</p>
+    <button onclick="Showplanet()">Show Planet</button>
+    <p id="result"></p>
+    <script>
+        class Planet {
+            constructor(name, fact) {
+                this.name = name;
+                this.fact = fact;
+            }
+            describe() {
+                return this.name + " _" + this.fact;
+            }
+        }
+        function Showplanet() {
+let planet = new Planet("Earth", "It's the third planet from the Sun.");
+            document.getElementById("result").innerHTML = planet.describe();
+        }
+        </script>
+</body>
+</html>
